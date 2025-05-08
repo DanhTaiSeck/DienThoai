@@ -12,6 +12,7 @@ app.use(express.json()); // Middleware để parse JSON
 app.use('/api', vocabularyRoutes); // Tất cả API nằm trong `/api`
 app.use('/api', cardRoutes); // 👈 Đăng ký route mới
 
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`🚀 Server đang chạy tại http://localhost:${PORT}/api/vocabulary`);
